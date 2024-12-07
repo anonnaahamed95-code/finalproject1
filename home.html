@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Inline CSS for Comic Sans MS */
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #6A0DAD;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* Hero Section Styling */
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* YouTube Video Background */
+    .hero iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.7;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px #000;
+      animation: slideIn 2s ease-out forwards;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin: 10px 0;
+      color: #FFD700;
+      animation: zoomIn 3s ease-out forwards;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+
+    /* Button Style */
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #6A0DAD;
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .hero button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0.5;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="game.html">Game</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with YouTube Video Background -->
+  <section class="hero">
+    <!-- Embedded YouTube Video -->
+    <iframe src="https://www.youtube.com/embed/ET-XLp5tUz8?autoplay=1&mute=1&loop=1&playlist=ET-XLp5tUz8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <h1>Welcome to My Website</h1>
+    <h2>San Francisco Bay University</h2>
+    <p>Explore my portfolio, learn about me, and check out my projects!</p>
+    <button onclick="window.location.href='https://www.sfbu.edu/'">Learn More</button>
+  </section>
+
+  <script>
+    // JavaScript for Button Interaction
+    function showWelcomeMessage() {
+      alert("Welcome to San Francisco Bay University! Explore our website.");
+    }
+  </script>
+</body>
+</html>

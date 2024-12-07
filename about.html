@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #6A0DAD;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* Hero Section */
+    .hero-about {
+      position: relative;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.sfbu.edu/sites/default/files/styles/full_node_banner/public/2021-11/Campus.jpeg') no-repeat center center/cover;
+      color: white;
+    }
+
+    .hero-about h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeInDown 2s ease;
+    }
+
+    .hero-about p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      animation: fadeInUp 2s ease;
+    }
+
+    /* About Section */
+    .about-container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about-container h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #6A0DAD;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    .about-container .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .about-box {
+      flex: 1 1 calc(33.333% - 20px);
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      animation: fadeIn 2s ease;
+    }
+
+    .about-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .about-box h3 {
+      color: #6A0DAD;
+      margin-top: 0;
+    }
+
+    .about-box p {
+      line-height: 1.6;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .about-box {
+        flex: 1 1 calc(100% - 20px);
+      }
+
+      .hero-about h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-about p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="game.html">Game</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-about">
+    <h1>About Me</h1>
+    <p>Learn more about my journey and San Francisco Bay University.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-container">
+    <h2>Who I Am</h2>
+    <div class="about-content">
+      <div class="about-box">
+        <h3>Education</h3>
+        <p>My name is <strong>Sanjida Ahamed</strong>, and I am currently studying at San Francisco Bay University, a renowned institution located in the heart of Silicon Valley. It offers top-tier programs in computer science and business management.</p>
+      </div>
+      <div class="about-box">
+        <h3>Skills</h3>
+        <p>I specialize in web development, JavaScript, and modern frameworks. I am also learning advanced design concepts and enjoy working on interactive web applications.</p>
+      </div>
+      <div class="about-box">
+        <h3>Interests</h3>
+        <p>In addition to coding, I am passionate about hiking, exploring nature, and engaging in cultural events. I love blending creativity and technology to build impactful projects.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

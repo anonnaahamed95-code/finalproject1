@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background: linear-gradient(to right, #0066cc, #003366);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+      color: #66cc33;
+    }
+
+    /* Portfolio Section */
+    .portfolio-container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .portfolio-container h2 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #6A0DAD;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .portfolio-item {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: calc(33% - 40px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .portfolio-item h3 {
+      color: #6A0DAD;
+    }
+
+    .portfolio-item p {
+      line-height: 1.6;
+    }
+
+    .portfolio-item a {
+      background-color: #66cc33;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .portfolio-item a:hover {
+      background-color: #003366;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .portfolio-item {
+        width: calc(100% - 40px);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="game.html">Game</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-container">
+    <h2>My Projects</h2>
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="portfolio-item">
+        <h3>Car Dealership System</h3>
+        <p>A database system project built in SQL for managing car dealership operations and data.</p>
+        <a href="https://drive.google.com/file/d/1EPrMxy9T5f9GAEw_k24j0Cm3hUHg3nwR/view?usp=drive_link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item">
+        <h3>Python Pizza Inventory</h3>
+        <p>A Python-based food inventory management system for a pizza store, including inventory tracking and menu management.</p>
+        <a href="https://drive.google.com/file/d/1hRKm0XlYjPLHqazCoEw_dXtQfWUsk4dM/view?usp=drive_link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item">
+        <h3>Linux Food Menu System</h3>
+        <p>A Linux-based system for managing food menus and recipes, developed with shell scripting and custom tools.</p>
+        <a href="https://drive.google.com/file/d/1YIapaJ9cIZDFktZ7U80VG40EJh2om7lW/view?usp=drive_link" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
